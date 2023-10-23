@@ -1,0 +1,249 @@
+body {
+    background-color: lightblue;
+}
+nav{
+    border:2px solid black;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    height: 125px;
+}
+
+nav a{
+    background-color: lightslategray;
+    padding: 5px;
+    margin: auto;
+    font-size: 20px;
+    color: black;
+}
+nav a.active {
+    color: aliceblue;
+    border: solid blue;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    text-align: underline;
+}
+
+#skip{
+    text-transform: uppercase;
+}
+
+#skip {
+    position: absolute;
+    left: -200px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:rgb(5, 5, 166);
+    text-align: center;
+    
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color:darkblue;
+    
+}
+
+img, video {
+    border:5px solid lavender;
+    padding: 10px;
+    margin: 20px;
+}  
+
+/* PETS */
+.pet_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+
+.pet_thubnail {
+    width: 300px; 
+    border-radius: 5px; 
+    border: 5px solid blue; 
+    padding: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.pet_paragraph {
+    border: 2px solid grey;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: lightcyan;
+}
+
+.pet_gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px;
+    width: 100%;
+}
+
+.pet_gallery * {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.pet_likings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+    border: 2px dashed gray;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+/* RECIPE */
+
+.recipe_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid grey;
+    background-color: lightgray;
+    margin: auto;
+    font-size: 20px;
+}
+
+@keyframes slideInCenterOut {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .recipe_img {
+    text-align: center;
+    animation: slideInCenterOut 5s ease-in-out infinite;
+    animation-fill-mode: forwards; 
+  }
+  
+  
+
+@media (prefers-reduced-motion) {
+    .recipe_img {
+        animation: none;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+.recipe_desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    display: inline-block;
+}
+
+.recipe_ing {
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+    line-height: 1;
+}
+
+.recipe_steps ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+.recipe_steps li {
+    padding-left: 1em; 
+    position: relative;
+    font-size: 18px;
+}
+
+.recipe_add {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    width: 100%;
+}
+
+/* TRAVEL */
+.travel_img_gif {
+    text-align: center;
+    width: auto; 
+    margin: auto;
+}
+
+.travel_loc {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.travel_desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    font-size: 16px;
+}
+.travel_desc p {
+    border: 2px solid grey;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: lightcyan;
+    overflow: auto;
+    height: 100px;
+}
+
+.travel_gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    
+}
+
+.travel_gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: auto; 
+}
+
+.travel_gallery figcaption {
+    text-align: center;
+    font-style: italic;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; 
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+
