@@ -62,10 +62,12 @@ h3 {
 }
 
 img, video {
+    display: grid;
     border:5px solid lavender;
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 500%;
+    border-radius: 20px;
 }  
 
 /* PETS */
@@ -105,7 +107,7 @@ img, video {
     width: 100%;
     height: auto; 
     object-fit: cover;
-    border-radius: 20px;
+    
 }
 
 .pet_likings {
@@ -195,12 +197,10 @@ img, video {
     max-block-size: 100%;
     margin-left: auto;
     margin-right: auto;
-    display:block;
 }
 
 /* TRAVEL */
 .travel_img_gif {
-    display: grid;
     width: 70%; 
     margin: auto;
 }
