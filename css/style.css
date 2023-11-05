@@ -146,8 +146,9 @@ img, video {
   
   .recipe_img {
     text-align: center;
+    margin: auto;
     animation: slideInCenterOut 5s ease-in-out infinite;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
   }
   
   
@@ -259,7 +260,73 @@ img, video {
 
 /* tablet size */
 @media screen and (min-width: 600px){
+    
+    nav {
+        height: auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+    nav a {
+        font-size: 24px;
+    }
+    
+    .pet_gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a responsive grid layout */
+        gap: 10px; /* Add some space between items */
+    }
+    @keyframes slideInCenterOut {
+        0% {
+          transform: translateX(-50%);
+        }
+        50% {
+          transform: translateX(50); /* Centered */
+        }
+        100% {
+          transform: translateX(100%); /* Return to starting position */
+        }
+        
+    }
+    
+    .recipe_img {
+        text-align: center;
+        margin: auto;
+        animation: slideInCenterOut 5s ease-in-out infinite;
+    }
 
+    .recipe_desc, .travel_desc p {
+        padding: 15px;
+        height: auto; 
+    }
+
+    img, video {
+        max-width: 150%;
+        height: auto; 
+    }
+    .travel_img_gif {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .travel_gallery img {
+        display: grid;
+        grid-gap: 10px; /* Spacing between items */
+        width: 400px;
+    }
+    
+    .travel_gallery figure {
+        width: auto;
+        margin: 10px;
+    }
 }
 
 /* desktop size */
