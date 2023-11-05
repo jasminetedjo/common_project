@@ -22,6 +22,9 @@ nav a.active {
     font-weight: bold;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
+nav a:hover {
+    background-color: rgb(8, 212, 239);
+}
 
 a{
     text-align: underline;
@@ -90,16 +93,19 @@ img, video {
 }
 
 .pet_gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     gap: 5px;
-    width: 100%;
+    width: 75%;
 }
 
 .pet_gallery * {
     width: 100%;
     height: auto; 
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .pet_likings {
@@ -184,24 +190,22 @@ img, video {
     font-size: 18px;
 }
 
-.recipe_add {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    width: 100%;
-    gap: 5px;
-}
 .recipe_add img {
-    width: 75%; 
-    height: auto; 
-    display: block; 
-    border-radius: 10px;
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
 }
 
 /* TRAVEL */
 .travel_img_gif {
-    text-align: center;
-    width: auto; 
+    display: grid;
+    width: 70%; 
     margin: auto;
+}
+.travel_img_gif img {    
+    max-width: 100%;   
 }
 
 .travel_loc {
@@ -228,15 +232,14 @@ img, video {
 .travel_gallery {
     display: grid;
     justify-content: center;
-
-    
 }
 
 .travel_gallery figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 50px;
+    max-width: 100%;  
     margin: auto; 
 }
 
@@ -254,3 +257,12 @@ img, video {
 }
 
 
+/* tablet size */
+@media screen and (min-width: 600px){
+
+}
+
+/* desktop size */
+@media screen and (min-width: 768px){
+
+}
