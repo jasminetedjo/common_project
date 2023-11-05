@@ -275,6 +275,10 @@ img, video {
     nav a {
         font-size: 24px;
     }
+    .pet_description p:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
     
     .pet_gallery {
         display: grid;
@@ -293,6 +297,10 @@ img, video {
         }
         
     }
+    .recipe_info:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
     
     .recipe_img {
         text-align: center;
@@ -304,10 +312,22 @@ img, video {
         padding: 15px;
         height: auto; 
     }
+    .recipe_ing li:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .recipe_steps li:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
 
     img, video {
         max-width: 150%;
         height: auto; 
+    }
+    .travel_desc p:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
     }
     .travel_img_gif {
         display: grid;
@@ -327,6 +347,11 @@ img, video {
         width: auto;
         margin: 10px;
     }
+    .travel_gallery figcaption:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
 }
 
 /* desktop size */
