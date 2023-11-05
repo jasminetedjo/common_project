@@ -129,7 +129,7 @@ img, video {
     border: 2px solid grey;
     background-color: lightgray;
     margin: auto;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 @keyframes slideInCenterOut {
